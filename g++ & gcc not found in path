@@ -1,0 +1,11 @@
+The first thing is to find out do you have gcc and g++ installed in your Ubuntu, you can use
+$ which g++ && which gcc
+to find out.
+If there is nothing please install them.
+$ sudo apt-get install gcc && apt-get install g++
+After the installation, you can check by use the which command above to find out the path of your gcc & g++.
+Then turn on your Eclipse, go to Window -> Preferences -> C/C++ -> Build -> Settings -> Discovery -> CDT GCC Build in Complier Settings [Shared]
+Change from : ${COMMAND} -E -P -v -dD "${INPUTS}"
+          to: /usr/bin/${COMMAND} -E -P -v -dD "${INPUTS}"
+
+I hope this may help.

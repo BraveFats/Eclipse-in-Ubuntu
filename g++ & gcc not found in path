@@ -9,3 +9,4 @@ Change from : ${COMMAND} -E -P -v -dD "${INPUTS}"
           to: /usr/bin/${COMMAND} -E -P -v -dD "${INPUTS}"
 
 I hope this may help.
+
